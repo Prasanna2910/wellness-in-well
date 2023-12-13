@@ -7,7 +7,7 @@ let getTheBoyImage = document.querySelector('.boyimg');
 let getTheGirlImage = document.querySelector('.girlimg');
 let score1 = 0;
 let score2 = 0;
-let noOfPlays = 5;
+let noOfPlays = 10;
 let scoreNumberSpan1 = document.getElementById('score-number1');
 let scoreNumberSpan2 = document.getElementById('score-number2');
 // adding an animationn effect to bring the number on screen
@@ -24,9 +24,11 @@ let numCont = document.querySelector('.numbercontainer');
 function gettingNumberOnScreen(number) {
   numCont.style.display = 'block';
   numCont.innerText = number;
+  numCont.classList.add("numbercontainer-Add");
   console.log('Here xyz', number);
 
   setTimeout(() => {
+    numCont.classList.remove("numbercontainer-Add")
     numCont.style.display = 'none';
   }, 200);
 }
