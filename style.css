@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url('./15037021.jpg');
+}
+h1 {
+  color: #114a6a;
+  font-size: 70px;
+  margin-top: 8%;
+  margin-left: 35%;
+  text-shadow: 2px 2px whitesmoke;
+}
+.playbtn {
+  margin-top: 200px;
+  margin-left: 50%;
+  border-radius: 50px;
+}
+button {
+  margin-left: 35%;
+  position: absolute;
+  top: 64%;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #114a6a;
+  color: whitesmoke;
+}
+h2 {
+  color: white;
+  margin-left: 55%;
+  position: absolute;
+  top: 65%;
+  text-shadow: 2px 2px #114a6a;
+}

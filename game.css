@@ -1,0 +1,98 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: rgb(117, 136, 155);
+  background: radial-gradient(
+    circle,
+    rgba(117, 136, 155, 1) 0%,
+    rgba(14, 27, 108, 1) 85%
+  );
+  width: 100%;
+  height: 100vh;
+}
+.maindiv {
+  height: 100vh;
+  width: 100%;
+  /* bottom: 100px; */
+  /* border: 5px solid black; */
+}
+.imgdiv {
+  /* border: 1px solid black; */
+  /* margin: 100px 100px 400px 500px; */
+  position: absolute;
+  right: 50%;
+  width: 200px;
+  border-radius: 25px;
+}
+.boyimage {
+  width: 300px;
+}
+.boyimg {
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  right: 60%;
+}
+.girlimage {
+  width: 300px;
+}
+.girlimg {
+  width: 150px;
+  position: absolute;
+  top: 240px;
+  right: 20%;
+}
+.girlscorediv {
+  color: white;
+  /* border: 1px solid black; */
+  background-color: #3e91c3;
+  width: 18%;
+  height: 60px;
+  position: absolute;
+  right: 8%;
+  top: 80px;
+}
+.boyscorediv {
+  color: white;
+  /* border: 1px solid black; */
+  background-color: #3e91c3;
+  width: 18%;
+  height: 60px;
+  position: absolute;
+  left: 8%;
+  top: 80px;
+}
+h2 {
+  font-size: 40px;
+}
+.wellimage {
+  border-radius: 200px;
+  margin-top: 130px;
+}
+.numbercontainer {
+  position: fixed;
+  top: 8%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  /* background-color: #fff;
+  border: 1px solid #000; */
+  padding: 10px;
+  z-index: 999px;
+  opacity: 0;
+  animation: animationAppear 1s ease-in-out forwards;
+}
+
+@keyframes animationAppear {
+  from {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
