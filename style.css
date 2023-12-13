@@ -12,15 +12,23 @@ h1 {
   margin-left: 32%;
   text-shadow: 2px 2px whitesmoke;
 }
-.playbtn {
+.bottomdiv{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:5%;
+  margin-left: 30%;
+}
+/* .playbtn {
   margin-top: 135px;
   margin-left: 50%;
   border-radius: 50px;
-}
+} */
 button {
-  margin-left: 35%;
-  position: absolute;
-  top: 64%;
+  /* margin-left: 35%; */
+  /* position: absolute; */
+  /* top: 64%; */
   width: 120px;
   height: 40px;
   font-size: 20px;
@@ -29,8 +37,9 @@ button {
 }
 h2 {
   color: white;
-  margin-left: 55%;
+
   position: absolute;
-  top: 65%;
+  top: 48%;
+  right: 20%;
   text-shadow: 2px 2px #114a6a;
 }
