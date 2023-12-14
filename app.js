@@ -1,19 +1,15 @@
-let clickingThePlayBtn = document.querySelector('.playbtn');
-let backgroundAudio = document.getElementById('backgroundAudio');
+const audio = new Audio('path/to/your/audiofile.mp3');
 
+const playButton = document.getElementById('playButton');
+
+playButton.addEventListener('click', function () {
+  audio.play();
+});
+let clickingThePlayBtn = document.querySelector('.playbtn');
 clickingThePlayBtn.addEventListener('click', function () {
-  // Pause the background audio when play button is clicked
-  backgroundAudio.pause();
   window.location.href = 'nickname.html';
 });
-document.addEventListener('DOMContentLoaded', function () {
-  const audio = new Audio('./bel.mp3');
-
-  // Get the play button element
-  // const playButton = document.getElementById('playButton');
-
-  // Add a click event listener to the play button
-
-  // Play the audio when the button is clicked
-  audio.play();
+let clickingTheAboutBtn = document.querySelector('#About');
+clickingTheAboutBtn.addEventListener('click', function () {
+  window.location.href = 'about.html';
 });
