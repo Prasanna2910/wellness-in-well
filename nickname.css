@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: rgb(246, 194, 238);
+  background: radial-gradient(
+    circle,
+    rgba(246, 194, 238, 1) 0%,
+    rgba(101, 55, 171, 1) 100%
+  );
+}
+.imgdiv{
+    width: 240px;
+    margin-left: 39%;
+    margin-top: 4%;
+}
+#maindiv {
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 29%;
+}
+#addName {
+  margin-left: 45%;
+  margin-top: 3%;
+}
+#player1btn,
+#player2btn {
+  height: 25px;
+}
+#addName {
+  height: 25px;
+  font-weight: bold;
+  box-shadow: 2px 2px black;
+}
+
+p {
+  font-weight: bold;
+}

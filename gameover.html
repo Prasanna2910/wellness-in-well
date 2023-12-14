@@ -8,20 +8,33 @@
   </head>
   <body>
     <div>
-      <div id="imgdiv">
-        <img src="./MacBook_Pro_14__-_5_last-removebg-preview.png" alt="" />
-
-        <div id="gameovertext">
-          <h1>Game Over !!</h1>
-          <h3>Out of chances</h3>
-        </div>
+      <!-- Main text "GameOver" is added -->
+      <div id="GameOver">
+        <h1>GAME</h1>
+        <h1 class="over">OVER</h1>
       </div>
-      <div id="yourscore">
-        <h3>Your Score is : <span id="final score">0</span></h3>
+      <div class="imgdiv">
+        <img
+          src="./girl_and_boy_final_page_image-removebg-preview.png"
+          alt=""
+          width="200px"
+          id="finalimg"
+        />
       </div>
-
-      <button id="playing" class="Play"><strong>Play again</strong></button>
+      <!-- <div id="gameovertext">
+        <h3>Out of chances</h3>
+      </div> -->
     </div>
+    <!-- div for player 1's score -->
+    <div id="Player1score">
+      <h3>Player 2's score : <span id="finalscore1">0</span></h3>
+    </div>
+    <!-- div for player 2's score -->
+    <div id="Player2score">
+      <h3>Player 1's score : <span id="finalscore2">0</span></h3>
+    </div>
+    <button id="playing" class="Play">Play again</button>
+
     <script src="gameover.js"></script>
   </body>
 </html>

@@ -16,67 +16,73 @@ body {
 .maindiv {
   height: 100vh;
   width: 100%;
-  /* bottom: 100px; */
-  /* border: 5px solid black; */
+
+}
+.playersname{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  margin-top: 1%;
+  text-shadow: 1px 1px black;
 }
 .imgdiv {
-  /* border: 1px solid black; */
-  /* margin: 100px 100px 400px 500px; */
+
   position: absolute;
   right: 50%;
   width: 200px;
   border-radius: 25px;
 }
-.boyimage {
-  width: 300px;
-}
+
 .boyimg {
   width: 300px;
   position: absolute;
-  top: 200px;
+  top: 180px;
   right: 60%;
 }
-.girlimage {
-  width: 300px;
-}
+
 .girlimg {
   width: 150px;
   position: absolute;
-  top: 240px;
+  top: 230px;
   right: 20%;
 }
 .girlscorediv {
+  text-align: center;
   color: white;
   /* border: 1px solid black; */
   background-color: #3e91c3;
-  width: 18%;
-  height: 60px;
+  width: 13%;
+  height: 53px;
   position: absolute;
   right: 8%;
   top: 80px;
 }
 .boyscorediv {
+  text-align: center;
   color: white;
   /* border: 1px solid black; */
   background-color: #3e91c3;
-  width: 18%;
-  height: 60px;
+  width: 13%;
+  height: 53px;
   position: absolute;
   left: 8%;
-  top: 80px;
+  top: 85px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 28px;
+  text-shadow: 2px 2px black;
 }
 .wellimage {
   border-radius: 200px;
-  margin-top: 130px;
+  margin-top: 100px;
+  margin-left: 27%;
 }
 .numbercontainer {
   position: fixed;
   top: 8%;
-  left: 46%;
-  font-size: 100px;
+  left: 48%;
+  font-size: 100px; 
   padding: 10px;
   z-index: 999px;
   opacity: 0;
@@ -96,3 +102,4 @@ h2 {
     transform: translateY(0);
   }
 }
+

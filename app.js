@@ -1,10 +1,19 @@
-// declaring a variable to get the id from html element and adding clicking ability to it
-// after clicking the button, we are making it to go to the next page
 let clickingThePlayBtn = document.querySelector('.playbtn');
+let backgroundAudio = document.getElementById('backgroundAudio');
+
 clickingThePlayBtn.addEventListener('click', function () {
-  window.location.href = 'gam.html';
+  // Pause the background audio when play button is clicked
+  backgroundAudio.pause();
+  window.location.href = 'nickname.html';
 });
-let clickingTheAboutBtn = document.querySelector('#About');
-clickingTheAboutBtn.addEventListener("click",function(){
-  window.location.href = "about.html"
-})
+document.addEventListener('DOMContentLoaded', function () {
+  const audio = new Audio('./bel.mp3');
+
+  // Get the play button element
+  // const playButton = document.getElementById('playButton');
+
+  // Add a click event listener to the play button
+
+  // Play the audio when the button is clicked
+  audio.play();
+});
