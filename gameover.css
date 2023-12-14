@@ -16,7 +16,7 @@ body {
   display: flex;
   /* border: 1px solid black; */
   width: 15%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-left: 43%;
   margin-top: 2%;
 }
@@ -30,7 +30,8 @@ body {
   width: 210px;
 }
 #finalimg{
-  margin-left: 230%;
+  position: absolute;
+  left: 44%;
 }
 .over {
   color: rgb(154, 0, 0);
