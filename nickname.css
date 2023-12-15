@@ -49,7 +49,7 @@ p {
     width: 30%;
   }
   .imgdiv {
-    margin-left: 20%;
+    margin-left: 17%;
   }
   p {
     font-size: 10px;
@@ -59,9 +59,12 @@ p {
     width: 60px;
     height: 15px;
   }
+  #name1 {
+    padding-right: 40px;
+  }
   #addName {
     width: 50px;
     font-size: 9px;
-    margin-left: 42%;
+    margin-left: 47%;
   }
 }

@@ -60,6 +60,7 @@ h2 {
   }
   .maindiv {
     margin-top: 20%;
+    height:150px;
   }
   h1 {
     font-size: 18px;
@@ -75,8 +76,13 @@ h2 {
   h2 {
     font-size: 8px;
   }
-  .bottomdiv{
+  .bottomdiv {
     display: block;
-    
   }
-}
+  #PlayBtnDiv{
+    padding-top: 20%;
+  }
+  #clickMeWording{
+    padding-top: 2%;
+   }
+} 
