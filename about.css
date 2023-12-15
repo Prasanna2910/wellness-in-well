@@ -1,9 +1,11 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  /* aadding a font family */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
+  /* setting a background gradient */
   background: rgb(0, 5, 60);
   background: radial-gradient(
     circle,
@@ -24,12 +26,9 @@ body {
 }
 .about {
   background-clip: text;
-  color: transparent; /* Make the text color transparent */
-  background-image: linear-gradient(
-    to right,
-    #ff00cc,
-    #3333cc
-  ); 
+  /* Make the text color transparent */
+  color: transparent;
+  background-image: linear-gradient(to right, #ff00cc, #3333cc);
 }
 
 h1 {
@@ -40,11 +39,18 @@ h1 {
 #container {
   margin-top: 2%;
   background-clip: text;
-  color: transparent; /* Make the text color transparent */
-  background-image: linear-gradient(
-    to right,
-    #dddd6e,
-    #62a3c9
-  ); 
+  /* Make the text color transparent */
+  color: transparent;
+  background-image: linear-gradient(to right, #dddd6e, #62a3c9);
   font-weight: bold;
+}
+
+/* adding media queries to make mobile reasponsive  */
+@media screen and (max-width: 325px) and (min-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 5px;
+  }
 }

@@ -11,11 +11,12 @@ body {
     rgba(101, 55, 171, 1) 100%
   );
 }
-.imgdiv{
-    width: 240px;
-    margin-left: 39%;
-    margin-top: 4%;
+.imgdiv {
+  width: 240px;
+  margin-left: 39%;
+  margin-top: 4%;
 }
+
 #maindiv {
   width: 42%;
   display: flex;
@@ -27,8 +28,8 @@ body {
   margin-left: 45%;
   margin-top: 3%;
 }
-#player1btn,
-#player2btn {
+#player1box,
+#player2box {
   height: 25px;
 }
 #addName {
@@ -39,4 +40,28 @@ body {
 
 p {
   font-weight: bold;
+}
+
+/* adding media queries to makae the page mobile responsiveness */
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  .maindiv {
+    display: block;
+    width: 30%;
+  }
+  .imgdiv {
+    margin-left: 20%;
+  }
+  p {
+    font-size: 10px;
+  }
+  #player1box,
+  #player2box {
+    width: 60px;
+    height: 15px;
+  }
+  #addName {
+    width: 50px;
+    font-size: 9px;
+    margin-left: 42%;
+  }
 }

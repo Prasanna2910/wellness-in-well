@@ -1,6 +1,12 @@
 // getting the html classess to the js and storing it in a variable
 let getTheWellImage = document.querySelector('.wellimage');
 
+// getting audio for the game page
+let gameonMusic = document.getElementById('gameonMusic');
+
+// getting audio for clicking
+let clickAudio = document.getElementById('clickaudio');
+
 // getting the html class for getting score
 let getScoreDiv = document.querySelector('.scorediv');
 
@@ -32,14 +38,20 @@ let span2 = document.getElementById('player2nickname');
 span1.innerHTML = localStorage1;
 span2.innerHTML = localStorage2;
 
+// declaring empty array to use it in the code
 let arrayOne = [];
 let arrayTwo = [];
 
-// adding an animationn effect to bring the number on screen
+// adding an animation effect to bring the number on screen in a number container which is got from HTML
 let numCont = document.querySelector('.numbercontainer');
 
 let gettingSpan1 = scoreNumberSpan1.value;
 let gettingSpan2 = scoreNumberSpan2.value;
+
+// while we load a page form previous page, background song playes
+window.onload = function () {
+  gameonMusic.play();
+};
 
 // declaring a function for the functionality to get a randomly generated number on screen
 function gettingNumberOnScreen(number) {
@@ -57,6 +69,7 @@ function gettingNumberOnScreen(number) {
 // adding clicking ability to the well image and showing the path for the "getTheBoyImage" what to do next
 getTheBoyImage.addEventListener('click', function () {
   // console.log("ifi")
+  clickAudio.play();
   if (noOfPlaysForBoy > 0) {
     console.log('Here ');
     const randomNumber = Math.floor(Math.random() * 10);
@@ -76,6 +89,7 @@ getTheBoyImage.addEventListener('click', function () {
 // adding clicking ability to the well image and showing the path for the "getTheGirlImage" what to do next
 getTheGirlImage.addEventListener('click', function () {
   // console.log("ifi")
+  clickAudio.play();
   if (noOfPlaysForGirl > 0) {
     const randomNumber = Math.floor(Math.random() * 10);
     gettingNumberOnScreen(randomNumber);
@@ -85,19 +99,11 @@ getTheGirlImage.addEventListener('click', function () {
     noOfPlaysForGirl--;
     localStorage.setItem('Player1', score1);
   }
-  // if (noOfPlaysForGirl === 0) {
-  //   gettingNumberOnScreen.disabled = true;
-  //   // window.location.href = 'gameover.html';
-  // }
-  // if (noOfPlaysForGirl === 0) {
-  //   gettingNumberOnScreen.disabled = true;
-  //   window.location.href = 'gameover.html';
-  // }
+
   if (noOfPlaysForBoy === 0 && noOfPlaysForGirl === 0) {
     gettingNumberOnScreen.disabled = true;
     window.location.href = 'gameover.html';
   }
 });
 
-arrayOne.push(scoreNumberSpan1);
-arrayTwo.push(scoreNumberSpan2);
+

@@ -11,11 +11,20 @@ body {
     rgba(255, 118, 189, 1) 100%
   );
 }
+.maindiv {
+  width: 70%;
+  margin-left: 10%;
+}
+.soundBtn {
+  width: 23px;
+  margin-top: 1%;
+}
+
 h1 {
   color: #114a6a;
-  font-size: 70px;
+  font-size: 45px;
   margin-top: 8%;
-  margin-left: 32%;
+  margin-left: 38%;
   text-shadow: 2px 2px whitesmoke;
 }
 .bottomdiv {
@@ -39,4 +48,35 @@ button {
 h2 {
   color: white;
   text-shadow: 2px 2px #114a6a;
+}
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  body {
+    background: rgb(214, 168, 49);
+    background: radial-gradient(
+      circle,
+      rgba(214, 168, 49, 1) 0%,
+      rgba(255, 118, 189, 1) 100%
+    );
+  }
+  .maindiv {
+    margin-top: 20%;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  button {
+    width: 45px;
+    height: 15px;
+    font-size: 8px;
+  }
+  .playbtn {
+    width: 20px;
+  }
+  h2 {
+    font-size: 8px;
+  }
+  .bottomdiv{
+    display: block;
+    
+  }
 }

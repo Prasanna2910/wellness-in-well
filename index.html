@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- adding a image to keep and pause background -->
+    <div id="soundBtn">
+      <!-- image tag for sound button -->
+      <img
+        src="./audio_button-removebg-preview.png"
+        alt=""
+        width="20px"
+        id="sound"
+      />
+      <!-- audio sourse addition  -->
+      <audio id="audioPlayer" src="./bel.mp3"></audio>
+    </div>
     <!-- main div to add all the elements -->
-    <div>
+    <div class="maindiv">
       <div>
         <!-- Adding text called "WELLNESS IN WELL" -->
         <h1>Wellness in Well</h1>
       </div>
 
-      <!-- adding a playbutton icon to add clickability -->
       <div class="bottomdiv">
+        <!-- adding a playbutton icon to add clickability -->
         <div><button id="About">About</button></div>
         <div>
           <img

@@ -1,9 +1,11 @@
 * {
   padding: 0px;
   margin: 0px;
+  /* setting a font family to the universal selector */
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
+  /* setting a background using css gradient  */
   background: rgb(117, 136, 155);
   background: radial-gradient(
     circle,
@@ -16,9 +18,8 @@ body {
 .maindiv {
   height: 100vh;
   width: 100%;
-
 }
-.playersname{
+.playersname {
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -27,7 +28,6 @@ body {
   text-shadow: 1px 1px black;
 }
 .imgdiv {
-
   position: absolute;
   right: 50%;
   width: 200px;
@@ -82,7 +82,7 @@ h2 {
   position: fixed;
   top: 8%;
   left: 48%;
-  font-size: 100px; 
+  font-size: 100px;
   padding: 10px;
   z-index: 999px;
   opacity: 0;
@@ -92,6 +92,7 @@ h2 {
   animation: animationAppear 1s ease-in-out forwards;
 }
 
+/* adding keyframes to instruct the animaationApper what to do  */
 @keyframes animationAppear {
   from {
     opacity: 1;
@@ -103,3 +104,9 @@ h2 {
   }
 }
 
+/* adding media query to add mobile responsiveness */
+@media screen and (max-width: 325px) and (min-width: 600px) {
+  h2 {
+    font-size: 1px;
+  }
+}
