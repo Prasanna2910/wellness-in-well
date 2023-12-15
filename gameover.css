@@ -80,7 +80,12 @@ body {
     left: 24%;
   }
   #randomText {
-    border: 1px solid black;
+    #randomText{
+      /* border: 1px solid black; */
+      width: 50%;
+      position: absolute;
+      left:28% ;
+    }
   }
   #Player1score {
     position: absolute;

@@ -5,6 +5,11 @@ const text =
 // Setting a index 0 to instruct the computer to start the previously mentioned texts to start from the 0th index
 let index = 0;
 
+// while we load a page form previous page, background song playes
+window.onload = function () {
+  typingsound.play();
+};
+
 function typeText() {
   // get the element from the HTML
   const typingText = document.getElementById('typing-text');
