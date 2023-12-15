@@ -26,10 +26,10 @@ body {
   top: 35%;
   left: 47%;
 } */
-.imgdiv{
+.imgdiv {
   width: 210px;
 }
-#finalimg{
+#finalimg {
   position: absolute;
   left: 44%;
 }
@@ -59,4 +59,40 @@ body {
   height: 30px;
   top: 70%;
   right: 45%;
+}
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  #GameOver {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 15%;
+    /* justify-content: space-between; */
+    margin-left: 23%;
+    margin-top: 2%;
+  }
+  #finalimg {
+    position: absolute;
+    left: 24%;
+  }
+  #Player1score {
+    position: absolute;
+    margin-top: 20px;
+    top: 50%;
+    left:22%;
+  }
+  #Player2score {
+    position: absolute;
+    margin-top: 20px;
+    top: 55%;
+    left: 22%;
+  }
+  #playing {
+    box-shadow: 3px 3px 3px black;
+    background-color: rgb(14, 149, 39);
+    font-weight: bolder;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 70%;
+    right: 35%;
+  }
 }

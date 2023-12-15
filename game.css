@@ -105,8 +105,44 @@ h2 {
 }
 
 /* adding media query to add mobile responsiveness */
-@media screen and (max-width: 325px) and (min-width: 600px) {
+@media screen and (min-width: 325px) and (max-width: 600px) {
   h2 {
-    font-size: 1px;
+    font-size: 18px;
   }
+  .boyscorediv {
+    width: 25%;
+    height: 20px;
+  }
+  .girlscorediv {
+    width: 25%;
+    height: 20px;
+  }
+  .wellimage {
+    width: 170px;
+    border-radius: 200px;
+    margin-top: 170px;
+    margin-left: 60%;
+  }
+  .boyimg {
+    width: 140px;
+    position: absolute;
+    top: 250px;
+    right: 60%;
+  }
+  
+.girlimg {
+  width: 80px;
+  position: absolute;
+  top: 260px;
+  right: 2%;
+}
+.numbercontainer {
+  position: fixed;
+  top: 8%;
+  left: 42%;
+  font-size: 100px;
+  padding: 10px;
+  z-index: 999px;
+  opacity: 0;
+}
 }
