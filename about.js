@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let takeOntoGame = document.getElementById('takeon');
 takeOntoGame.addEventListener('click', function () {
-  window.location.href = 'gam.html';
+  window.location.href = 'nickname.html';
 });
