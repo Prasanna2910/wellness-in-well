@@ -14,3 +14,8 @@ let spanTag1 = document.getElementById('finalscore1');
 let spanTag2 = document.getElementById('finalscore2');
 spanTag1.innerHTML = localStoragePlayer1;
 spanTag2.innerHTML = localStoragePlayer2;
+
+let randomGenerator = document.getElementById("randomSpan")
+arrayRandom = ["Lucky fellows","fantastic two","Rockers","Check your luck again"]
+console.log(randomGenerator)
+randomGenerator.innerText = arrayRandom[Math.floor(Math.random()*4)]

@@ -43,7 +43,7 @@ p {
 }
 
 /* adding media queries to makae the page mobile responsiveness */
-@media screen and (min-width: 325px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .maindiv {
     display: block;
     width: 30%;

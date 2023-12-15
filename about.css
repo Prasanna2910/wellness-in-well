@@ -43,14 +43,37 @@ h1 {
   color: transparent;
   background-image: linear-gradient(to right, #dddd6e, #62a3c9);
   font-weight: bold;
+  text-align: justify;
+}
+#takeon{
+  position: absolute;
+  top: 60% ;
+  right: 20%;
+  height: 25px;
+  width: 45px;
+  font-weight: bold;
+  border: 1px solid brown;
+  box-shadow: 2px 2px 2px rgb(130, 25, 25);
+  background-color: beige;
 }
 
 /* adding media queries to make mobile reasponsive  */
-@media screen and (max-width: 325px) and (min-width: 600px) {
+@media screen and (max-width: 320px) and (min-width: 600px) {
   h1 {
     font-size: 20px;
   }
   p {
     font-size: 5px;
+  }
+  #takeon{
+    position: absolute;
+    top: 70% ;
+    right: 20%;
+    height: 25px;
+    width: 45px;
+    font-weight: bold;
+    border: 1px solid brown;
+    box-shadow: 2px 2px 2px rgb(130, 25, 25);
+    background-color: beige;
   }
 }

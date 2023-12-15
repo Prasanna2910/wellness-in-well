@@ -17,8 +17,14 @@ body {
   /* border: 1px solid black; */
   width: 15%;
   /* justify-content: space-between; */
-  margin-left: 43%;
-  margin-top: 2%;
+  margin-left: 45%;
+  margin-top: 1%;
+}
+#randomText{
+  /* border: 1px solid black; */
+  width: 50%;
+  position: absolute;
+  left:28% ;
 }
 /* #gameovertext {
   font-size: 14px;
@@ -60,29 +66,32 @@ body {
   top: 70%;
   right: 45%;
 }
-@media screen and (min-width: 325px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   #GameOver {
     display: flex;
     /* border: 1px solid black; */
     width: 15%;
     /* justify-content: space-between; */
-    margin-left: 23%;
+    margin-left: 28%;
     margin-top: 2%;
   }
   #finalimg {
     position: absolute;
     left: 24%;
   }
+  #randomText {
+    border: 1px solid black;
+  }
   #Player1score {
     position: absolute;
     margin-top: 20px;
-    top: 50%;
-    left:22%;
+    top: 45%;
+    left: 22%;
   }
   #Player2score {
     position: absolute;
     margin-top: 20px;
-    top: 55%;
+    top: 50%;
     left: 22%;
   }
   #playing {

@@ -49,7 +49,7 @@ h2 {
   color: white;
   text-shadow: 2px 2px #114a6a;
 }
-@media screen and (min-width: 325px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   body {
     background: rgb(214, 168, 49);
     background: radial-gradient(
