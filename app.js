@@ -1,4 +1,4 @@
-// getting elements HTML to use in JS
+// getting elements from HTML to use in JS
 let soundBtn = document.getElementById('sound');
 let soundPlay = document.getElementById('audioPlayer');
 
@@ -20,5 +20,5 @@ clickingThePlayBtn.addEventListener('click', function () {
 // while clicking the About, we are instructing the page to go to the respective page
 let clickingTheAboutBtn = document.querySelector('#About');
 clickingTheAboutBtn.addEventListener('click', function () {
-  window.location.href = 'about.html';
+  window.location.href = 'about.html'; //taking to about.html page
 });

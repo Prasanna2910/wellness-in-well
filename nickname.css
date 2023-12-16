@@ -1,10 +1,10 @@
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0px; /*setting padding and margin to be 0 for universal selector to avoid spaces that are not required in the page */
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background: rgb(246, 194, 238);
+  background: rgb(246, 194, 238); /*setting a background gradient using css gradient*/
   background: radial-gradient(
     circle,
     rgba(246, 194, 238, 1) 0%,

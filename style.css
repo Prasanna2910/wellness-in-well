@@ -1,5 +1,5 @@
 * {
-  margin: 0px;
+  margin: 0px; /*setting padding and margin to be 0 for universal selector to avoid spaces that are not required in the page */
   padding: 0px;
 }
 body {
@@ -49,6 +49,7 @@ h2 {
   color: white;
   text-shadow: 2px 2px #114a6a;
 }
+/* adding media queries to make the page mobile responsive */
 @media screen and (min-width: 320px) and (max-width: 600px) {
   body {
     background: rgb(214, 168, 49);

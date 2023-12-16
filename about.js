@@ -17,15 +17,17 @@ function typeText() {
   index++;
 
   if (index < text.length) {
-    // Adjusting the timeout to look like typing fast
+    // Adjusting the timeout to look like typing fast using setTimeout
     setTimeout(typeText, 35);
   }
 }
 
+// adding an event listener called "DOMContentLoaded" to display all the HTML that are required to to be shown initially before displaying other stuff
 document.addEventListener('DOMContentLoaded', function () {
-  typeText();
+  typeText(); //showing the typing effect
 });
 
+// the start btton has been added functionality to take the user to the next page - "nickname.html"
 let takeOntoGame = document.getElementById('takeon');
 takeOntoGame.addEventListener('click', function () {
   window.location.href = 'nickname.html';

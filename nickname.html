@@ -4,21 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nickname page</title>
+    <!-- linking the html page to the respective css page -->
     <link rel="stylesheet" href="nickname.css" />
   </head>
   <body>
-    <div class="imgdiv"><img src="./boy_and_girl_image-removebg-preview.png" alt="" width="230px" ></div>
+    <!-- declaring a dic for the image -->
+    <div class="imgdiv">
+      <img
+        src="./boy_and_girl_image-removebg-preview.png"
+        alt=""
+        width="230px"
+      />
+    </div>
+
+    <!-- declaring a main div -->
     <div id="maindiv">
+      <!--place for adding a text of player 1 -->
       <div id="name1">
         <p>Enter your Nickname</p>
         <input type="text" placeholder="Player 1" id="player1box" />
       </div>
+      <!--place for adding a text of player 2 -->
       <div>
         <p>Enter your Nickname</p>
         <input type="text" placeholder="Player 2" id="player2box" />
       </div>
     </div>
+    <!-- adding a button "We are ready" wich when cicked take to next page -->
     <div><button id="addName">We are Ready!!</button></div>
+
+    <!-- linkinng the html page with respective js file -->
     <script src="nickname.js"></script>
   </body>
 </html>

@@ -60,6 +60,7 @@ function gettingNumberOnScreen(number) {
   numCont.classList.add('numbercontainer-Add');
   console.log('Here xyz', number);
 
+  //using setTimeout to remove number after a particular time interval
   setTimeout(() => {
     numCont.classList.remove('numbercontainer-Add');
     numCont.style.display = 'none';
@@ -78,11 +79,12 @@ getTheBoyImage.addEventListener('click', function () {
     scoreNumberSpan2.innerText = score2;
     score2.innerText = `ScoreB: ${score2}`;
     noOfPlaysForBoy--;
-    localStorage.setItem('Player2', score2);
+    localStorage.setItem('Player2', score2); //storing the name in local storage using setItem
   }
+  //only after the boy and girl completes five chances each, it moves to next page
   if (noOfPlaysForBoy === 0 && noOfPlaysForGirl === 0) {
     gettingNumberOnScreen.disabled = true;
-    window.location.href = 'gameover.html';
+    window.location.href = 'gameover.html'; //taking the user to next page - "gameover.html"
   }
 });
 
@@ -97,13 +99,11 @@ getTheGirlImage.addEventListener('click', function () {
     scoreNumberSpan1.innerText = score1;
     score1.innerText = `ScoreA: ${score1}`;
     noOfPlaysForGirl--;
-    localStorage.setItem('Player1', score1);
+    localStorage.setItem('Player1', score1); //storing the name in local storage using setItem
   }
-
+  //only after the boy and girl completes five chances each, it moves to next page
   if (noOfPlaysForBoy === 0 && noOfPlaysForGirl === 0) {
     gettingNumberOnScreen.disabled = true;
-    window.location.href = 'gameover.html';
+    window.location.href = 'gameover.html'; //taking the user to next page - "gameover.html"
   }
 });
-
-

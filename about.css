@@ -1,7 +1,7 @@
 * {
   padding: 0px;
-  margin: 0px;
-  /* aadding a font family */
+  margin: 0px; /*setting padding and margin to be 0 for universal selector to avoid spaces that are not required in the page */
+  /* adding a font family */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
