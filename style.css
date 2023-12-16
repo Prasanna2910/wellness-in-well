@@ -49,7 +49,7 @@ h2 {
   color: white;
   text-shadow: 2px 2px #114a6a;
 }
-/* adding media queries to make the page mobile responsive */
+/* adding media queries to make the page mobile respon */
 @media screen and (min-width: 320px) and (max-width: 600px) {
   body {
     background: rgb(214, 168, 49);
@@ -80,10 +80,18 @@ h2 {
   .bottomdiv {
     display: block;
   }
+  #About{
+    position: absolute;
+    left: 47%;
+    top: 25%;
+  }
   #PlayBtnDiv{
     padding-top: 20%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
   }
   #clickMeWording{
-    padding-top: 2%;
+    display: none;
    }
 } 

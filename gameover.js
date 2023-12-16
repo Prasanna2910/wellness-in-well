@@ -17,6 +17,6 @@ spanTag2.innerHTML = localStoragePlayer2;
 
 // declaring an array to store five wordings andd then taking and displaying it randomly in the gameover page.
 let randomGenerator = document.getElementById("randomSpan")
-arrayRandom = ["Lucky fellows","fantastic two","Rockers","Check your luck again, Once again dude!!"]
+arrayRandom = ["Lucky fellows","fantastic two","Rockers","Check your luck again", "Once again dude!!"]
 console.log(randomGenerator)
 randomGenerator.innerText = arrayRandom[Math.floor(Math.random()*5)]

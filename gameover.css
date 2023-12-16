@@ -3,7 +3,11 @@
   margin: 0px;
 }
 body {
-  background: rgb(113, 114, 202); /*adding a gradient background from CSS gradient*/
+  background: rgb(
+    113,
+    114,
+    202
+  ); /*adding a gradient background from CSS gradient*/
   background: radial-gradient(
     circle,
     rgba(113, 114, 202, 1) 0%,
@@ -20,11 +24,13 @@ body {
   margin-left: 45%;
   margin-top: 1%;
 }
-#randomText{
+#randomText {
   /* border: 1px solid black; */
+  background-color: blanchedalmond;
+  font-weight: bold;
   width: 50%;
   position: absolute;
-  left:28% ;
+  left: 28%;
 }
 
 .imgdiv {
@@ -77,23 +83,21 @@ body {
     left: 24%;
   }
   #randomText {
-    #randomText{
-      /* border: 1px solid black; */
-      width: 50%;
-      position: absolute;
-      left:28% ;
-    }
+    /* border: 1px solid black; */
+    width: 48%;
+    position: absolute;
+    left: 28%;
   }
   #Player1score {
     position: absolute;
     margin-top: 20px;
-    top: 45%;
+    top: 40%;
     left: 22%;
   }
   #Player2score {
     position: absolute;
     margin-top: 20px;
-    top: 50%;
+    top: 45%;
     left: 22%;
   }
   #playing {
@@ -103,7 +107,7 @@ body {
     position: absolute;
     width: 80px;
     height: 30px;
-    top: 70%;
-    right: 35%;
+    top: 55%;
+    right: 40%;
   }
 }
